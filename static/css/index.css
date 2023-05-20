@@ -1,3 +1,5 @@
+/* nav bar css */
+
 .navbar {
   background-color: #25292a;
 }
@@ -15,4 +17,16 @@
 .brand-name {
   margin-left: 52px;
   color: white;
+}
+
+.nav-link{
+  color: white;
+}
+
+.nav-link:hover {
+  color: rgb(207, 202, 202);
+  } 
+
+.navbar-toggler{
+  border-style: none;
 }
