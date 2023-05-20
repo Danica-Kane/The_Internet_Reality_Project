@@ -7,9 +7,17 @@ app = Flask(__name__, static_url_path='/static')
 def index():
     return render_template('index.html')
 
-@app.route('/templates/new_page.html')
-def new_page():
-    return render_template('new_page.html')
+@app.route('/templates/Contact.html' , methods=['GET', 'POST'])
+def Contact():
+    return render_template('Contact.html')
+
+@app.route('/templates/Education.html' , methods=['GET', 'POST'])
+def Education():
+    return render_template('Education.html')
+
+@app.route('/templates/Game.html' , methods=['GET', 'POST'])
+def Game():
+    return render_template('Game.html')
 
 
 if __name__ == "__main__":
