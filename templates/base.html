@@ -14,37 +14,70 @@
     />
     <link rel="stylesheet" href="/static/css/index.css" />
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
     <title>The Internet Reality Project</title>
   </head>
   <body>
     <!-- Nav Bar -->
 
-    <nav class="top-nav navbar-expand-lg fixed-top">
-       <a class="navbar-brand" href="#">
-          <div class="container-fluid icon">
+    <div class="fixed-top">
+      <header>
+        <nav class="navbar">
+          <a class="navbar-brand brand-name nav-link" href="/">
             <img
               src="/static/images/Website_Logo.jpg"
               alt="Logo"
-              class="custom_Website_Logo"
+              class="Custom_Website_Logo"
             />
+            THE INTERNET REALITY PROJECT
+          </a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="/" class="nav-link pages">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="/templates/Contact.html" class="nav-link pages"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/templates/Education.html" class="nav-link pages"
+                >Education</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/templates/Game.html" class="nav-link pages">Game</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
           </div>
-          <div class="brand-name">THE INTERNET REALITY PROJECT</div>
-        </a>
-      <input id="menu-toggle" type="checkbox" />
-      <label class='menu-button-container' for="menu-toggle">
-      <div class='menu-button'></div>
-    </label>
-      <ul class="menu">
-        <li class="menu-item"> <a class="nav-link" href="/"> Home </a> </li>
-        <li class="menu-item"> <a class="nav-link" href="/templates/Contact.html"> Contact </a> </li>
-        <li class="menu-item"> <a class="nav-link" href="/templates/Education.html"> Education </a> </li>
-        <li class="menu-item">  <a class="nav-link" href="/templates/Game.html"> Game </a> </li>
-      </ul>
-    </nav>
+        </nav>
+      </header>
+    </div>
 
-    <br> <br> <br> <br> <br> <br> <br>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
 
-    
     {% block content %} {% endblock %}
 
     <!-- Bootstrap Script Link -->
@@ -53,5 +86,7 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+
+    <script src="{{url_for('static', filename='script.js')}}"></script>
   </body>
 </html>
