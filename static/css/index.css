@@ -1,3 +1,4 @@
+/* ----- NAVIGATION BAR -----*/
 .Custom_Website_Logo {
   width: 50px;
   height: 50px;
@@ -93,94 +94,31 @@ li {
   }
 }
 
-
-.page-active{
-  text-decoration: underline #02A0E0 3px;
-  text-underline-offset: 10px 
+.page-active {
+  text-decoration: underline #02a0e0 3px;
+  text-underline-offset: 10px;
 }
 
-.Custom_Accessibility-Icon{
+.Custom_Accessibility-Icon {
   width: 30px;
   height: 30px;
 }
 
-.acsessibility-btn{
- background-color: #00BF63;
+.acsessibility-btn {
+  background-color: #00bf63;
   margin-top: 10px;
 }
 
-.acsessibility-btn:hover{
-  background-color: #00BF63;
- }
+.acsessibility-btn:hover {
+  background-color: #00bf63;
+}
 
- .dyslexia{
-  font-family: 'OpenDyslexic3Regular';
- }
+.dyslexia {
+  font-family: "OpenDyslexic3Regular";
+}
 
- .font-size{
+.font-size {
   font-size: 150%;
- }
-
- /* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 30px;
-  height: 17px;
-  margin-right: 5px;
 }
 
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 13px;
-  width: 13px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(13px);
-  -ms-transform: translateX(13px);
-  transform: translateX(13px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 17px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
+/* -------------- */
