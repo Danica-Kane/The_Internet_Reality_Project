@@ -91,3 +91,9 @@ li {
     left: 0;
   }
 }
+
+
+.page-active{
+  text-decoration: underline #02A0E0 3px;
+  text-underline-offset: 10px 
+}
