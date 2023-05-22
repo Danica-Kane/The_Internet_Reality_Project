@@ -21,6 +21,12 @@
       href="https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org//face/opendyslexic"
+      type="text/css"
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
@@ -29,7 +35,7 @@
 
     <title>The Internet Reality Project</title>
   </head>
-  <body>
+  <body class="">
     <!-- Nav Bar -->
 
     <div class="fixed-top">
@@ -60,13 +66,27 @@
             <li class="nav-item">
               <a href="/templates/Game.html" class="nav-link pages">Game</a>
             </li>
-            <div class="dropdown acsessibility-btn">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown button
+            <div class="dropdown">
+              <button
+                class="btn acsessibility-btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                id="acsessibility-btn"
+              >
+                <img
+                  src="/static/images/accessibility-icon.png"
+                  alt="accessibility-icon"
+                  class="Custom_Accessibility-Icon"
+                />
               </button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item dyslexia-btn" href="#"> Dyslexia </a>
+                </li>
+                <li>
+                  <a class="dropdown-item font-size-btn" href="#">Font Size</a>
+                </li>
               </ul>
             </div>
           </ul>
@@ -87,7 +107,7 @@
     <br />
     <br />
 
-    <h1>hello world, this is from the template</h1>
+    <h>hello world, this is from the template</h>
 
     <br />
     <br />
