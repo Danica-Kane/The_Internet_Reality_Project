@@ -107,6 +107,7 @@ li {
 .acsessibility-btn {
   background-color: #00bf63;
   margin-top: 10px;
+  border-radius: 80px;
 }
 
 .acsessibility-btn:hover {
