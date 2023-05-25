@@ -37,7 +37,7 @@ li {
   align-items: right;
   gap: 60px;
   justify-content: right;
-  margin-right: 100px;
+  margin-right: 50px;
 }
 .nav-link {
   transition: 0.3s ease-out;
@@ -94,11 +94,6 @@ li {
   }
 }
 
-.page-active {
-  text-decoration: underline #02a0e0 3px;
-  text-underline-offset: 10px;
-}
-
 .Custom_Accessibility-Icon {
   width: 30px;
   height: 30px;
@@ -122,4 +117,22 @@ li {
   font-size: 150%;
 }
 
+.dropdown-menu-center {
+  left: 50% !important;
+  right: auto !important;
+  text-align: center !important;
+  transform: translate(-50%, 0) !important;
+}
+
 /* -------------- */
+
+/* FOOTER */
+
+.footer{
+  background-color: #545454;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
