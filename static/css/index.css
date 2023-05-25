@@ -123,16 +123,45 @@ li {
   text-align: center !important;
   transform: translate(-50%, 0) !important;
 }
-
 /* -------------- */
 
 /* FOOTER */
 
 .footer{
   background-color: #545454;
-  font-size: 20px;
+  font-size: 10px;
   font-family: "Montserrat", sans-serif;
-  padding: 0px;
   margin: 0px;
   width: 100%;
+  color: #fff;
+  padding: 0px;
+}
+
+.footer-logo {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: 0px;
+  padding-right: 0px;
+  clear: right;
+}
+
+.footer-center-col{
+  text-align: center;
+}
+
+.footer-contacts{
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.footer-contacts:hover{
+  color: #e0dddd;
+  text-decoration: none;
+}
+
+.footer-contact-list{
+  margin-top: 10px;
 }
