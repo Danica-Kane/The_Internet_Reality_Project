@@ -109,12 +109,18 @@
       </header>
     </div>
 
+    <!-- HERO BANNER -->
+    
+    <div class="hero">
+      {% block hero %}{% endblock %}
+    </div>
+
     <!-- PAGE CONTENT -->
     <div id="content">{% block content %} {% endblock %}</div>
 
     <!-- FOOTER -->
     <div id="footer">
-      <div class="container-fluid footer">
+      <div class="container-fluid footer ">
         <div class="row">
           <div class="col-md-4 footer-contact-list">
             <a href="#" class="footer-contacts">
