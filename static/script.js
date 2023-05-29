@@ -24,8 +24,19 @@ dyslexia.addEventListener("click", () => {
   document.body.classList.toggle('dyslexia');
   })
 
+  dyslexia.addEventListener("click", () => {
+    var element = document.getElementById("home-text-one");
+    element.classList.toggle("colum-home-1-text-font");
+    })
+
   const fontSize = document.querySelector(".font-size-btn");
 
 fontSize.addEventListener("click", () => {
   document.body.classList.toggle('font-size');
   })
+
+
+/* --- PARRALAX SCROLL --- */
+
+var image = document.getElementsByClassName('hero-banner');
+new simpleParallax(image);
