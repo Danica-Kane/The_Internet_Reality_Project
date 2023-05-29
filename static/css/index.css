@@ -178,8 +178,8 @@ li {
   border-width: 10px;
   border-top: #02A0E0;
   margin: 5px;
-  margin-top: 30px;
   padding: 10px;
+  margin-top: 30px;
   border-right: #02A0E0;
   border-color: #02A0E0;
 }
@@ -200,8 +200,84 @@ li {
   margin: 5px;
 }
 
+h1{
+  color: #0269AD;
+  text-align: left;
+  font-weight: bold;
+  font-size: 60px;
+}
 
+.h1-one{
+  text-align: left;
+}
 
+.header-one{
+  margin-left: 5px;
+  margin-bottom: 70px;
+}
+
+.home-header-one-font{
+  font-family:  "Montserrat", sans-serif;
+}
+
+@media (max-width: 900px) {
+  .colum-home-1{
+    border-style: none;
+  }
+}
+
+.header-background-1{
+  background-image: url(/static/images/header-background.png);
+  background-position: left;
+  background-repeat:no-repeat;
+  background-size: contain;
+  padding: 30px;
+
+}
+
+.header-background-2{
+  background-image: url(/static/images/header-background.png);
+  background-position: right;
+  background-repeat:no-repeat;
+  background-size: contain;
+  padding: 30px;
+
+}
+
+.h1-2{
+  text-align:right;
+}
+
+.header-two{
+  margin-right: 5px;
+}
+
+.home-header-two-font{
+  font-family:  "Montserrat", sans-serif;
+}
+
+.colum-home-2-text{
+  text-align: right;
+  margin: 10px;
+}
+
+.colum-home-2-text-font{
+  font-family: "Montserrat", sans-serif;
+}
+
+.home-img2{
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin: 5px;
+}
+
+.section-text{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* --- ACSESSIBILITY --- */
 
 .dyslexia {
   font-family: "OpenDyslexic3Regular";
