@@ -132,11 +132,10 @@ li {
 .footer-logo {
   width: 100px;
   height: 100px;
-  display: block;
   margin-left: auto;
   margin-right: 0px;
   padding-right: 0px;
-  clear: right;
+  float: right;
 }
 
 .footer-center-col{
@@ -155,9 +154,10 @@ li {
 }
 
 .footer-contact-list{
+  text-align: left;
+  float: left;
   margin-top: 10px;
 }
-
 /* -------------- */
 
 /*  PARALEX HERO BANNER */

@@ -110,65 +110,59 @@
     </div>
 
     <!-- HERO BANNER -->
-    <div class="hero">
-      {% block hero %}{% endblock %}
-    </div>
-    
+    <div class="hero">{% block hero %}{% endblock %}</div>
 
     <!-- PAGE CONTENT -->
     <div id="content">{% block content %} {% endblock %}</div>
 
     <!-- FOOTER -->
     <div id="footer">
-      <div class="container-fluid footer ">
+      <div class="container-fluid footer">
         <div class="row">
-          <div class="col-md-4 footer-contact-list">
-            <a href="#" class="footer-contacts">
-              <i class="bi bi-envelope-at-fill footer-icons"></i>
-              Email
-            </a>
-            <br />
-            <a href="#" class="footer-contacts">
-              <i class="bi bi-telephone-fill"></i>
-              -- Phone --
-            </a>
-            <br />
-            <a href="#" class="footer-contacts">
-              <i class="bi bi-instagram"></i>
-              Instagram
-            </a>
-            <br />
-            <a href="#" class="footer-contacts">
-              <i class="bi bi-facebook"></i>
-              Facebook
-            </a>
-            <br />
-            <a href="#" class="footer-contacts">
-              <i class="bi bi-twitter"></i>
+          <div class="col col footer-center-col">
+            <div class="footer-contact-list">
+              <a href="#" class="footer-contacts">
+                <i class="bi bi-envelope-at-fill footer-icons"></i>
+                Email
+              </a>
+              <br />
+              <a href="#" class="footer-contacts">
+                <i class="bi bi-telephone-fill"></i>
+                Phone
+              </a>
+              <br />
+              <a href="#" class="footer-contacts">
+                <i class="bi bi-instagram"></i>
+                Instagram
+              </a>
+              <br />
+              <a href="#" class="footer-contacts">
+                <i class="bi bi-facebook"></i>
+                Facebook
+              </a>
+              <br />
+              <a href="#" class="footer-contacts">
+                <i class="bi bi-twitter"></i>
 
-              Twitter
-            </a>
-            <br/>
-            <br>
-          </div>
-          <div class="col-md-4 footer-center-col">
-            <br>
-            Made by Danica Kane
-            <br />
-            Made with VSCode, Flask, and Bootstrap
-            <br />
-            <br />
-            Original images generated with Canva
-            <br>
-            {% block footer %} {% endblock %}
-            <br>
-          </div>
-          <div class="col-md-4 ">
+                Twitter
+              </a>
+              <br />
+              <br />
+            </div>
             <img
               src="/static/images/Website_Logo.jpg"
               alt="Logo"
               class="footer-logo"
             />
+            <br />
+            Made by Danica Kane
+            <br />
+            Made with VSCode, Flask, and Bootstrap
+            <br />
+            Original images generated with Canva
+            <br />
+            {% block footer %} {% endblock %}
+            <br />
           </div>
         </div>
       </div>
