@@ -50,6 +50,24 @@ dyslexia.addEventListener("click", () => {
   element.classList.toggle("home-header-two-font");
 });
 
+/* --- */
+
+dyslexia.addEventListener("click", () => {
+  var element = document.getElementById("contact-text-one");
+  element.classList.toggle("colum-contact-1-text-font");
+});
+
+dyslexia.addEventListener("click", () => {
+  var element = document.getElementById("contact-text-two");
+  element.classList.toggle("colum-contact-2-text-font");
+});
+
+dyslexia.addEventListener("click", () => {
+  var element = document.getElementById("h1-3");
+  element.classList.toggle("contact-header-one-font");
+});
+
+/*--*/
 const fontSize = document.querySelector(".font-size-btn");
 
 fontSize.addEventListener("click", () => {

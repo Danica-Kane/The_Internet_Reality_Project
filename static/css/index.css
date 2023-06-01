@@ -277,6 +277,154 @@ h1{
   margin-bottom: 20px;
 }
 
+/* --- CONTACT --- */
+
+.colum-contact-1{
+  border-style: dotted;
+  border-width: 10px;
+  margin: 5px;
+  padding: 10px;
+  margin-top: 30px;
+  border-right: #02A0E0;
+  border-color: #02A0E0;
+  border-top: #fff;
+  border-bottom: #fff;
+}
+
+@media (max-width: 900px) {
+  .colum-contact-1{
+    border-style: none;
+  }
+}
+
+.colum-contact-1-text{
+  text-align: left;
+  margin: 10px;
+}
+
+.colum-contact-1-text-font{
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-img1{
+  width: 450px;
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20spx;
+}
+
+.contact-header-one-font{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.contact-page-list{
+  color: #000000;
+  text-decoration: none;
+}
+
+.contact-page-list:hover{
+  color: #262626;
+}
+
+.contact-icons{
+  color: #02A0E0;
+}
+
+.contact-form-1{
+  background-color: #293032;
+}
+
+.contact-form-2{
+  background-color: #02A0E0;
+}
+
+.contact-form-header{
+  float: right;
+  color: #03568D;
+  font-family: "Montserrat", sans-serif, bold;
+  font-weight: bold;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 30%;
+}
+
+input{
+  float: right;
+  margin-right: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border:none;
+  margin-left: 30%;
+  width: 300px;
+}
+
+textarea{
+  float: right;
+  margin-right: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-left: 30%;
+  border:none;
+  width:300px
+}
+
+.submit-btn{
+  background-color: #7ED957;
+  color: #255e0c;
+  font-family: "Montserrat", sans-serif;
+  border-color: none;
+  margin-left: 30%;
+  float: right;
+  margin-right: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  textarea{
+    width:150px
+  }
+  input{
+    width: 150px;
+  }
+}
+
+.submit-btn:hover{
+  background-color: #52a52e;
+
+}
+
+.contact-form-image{
+  background-image: url(/static/images/contact-form-img.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #02A0E0;
+}
+
+.contact-form-header-left{
+  color: #e0dddd;
+  font-family: "Montserrat", sans-serif, bold;
+  font-weight: bold;
+  float: left;
+  margin-left: 10px;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+
+@media (max-width: 900px) {
+.contact-form-header-left{
+  font-size: 20px;
+}
+}
+
+.contact-arrow-img{
+  width: 50%;
+  float: right;
+}
 /* --- ACSESSIBILITY --- */
 
 .dyslexia {
