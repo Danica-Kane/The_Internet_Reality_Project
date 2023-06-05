@@ -425,6 +425,99 @@ textarea{
   width: 50%;
   float: right;
 }
+
+/* --- EDUCATION PAGE --- */
+
+.education-container{
+  font-family: "Montserrat", sans-serif;
+}
+
+.h3-1{
+  color: #0269AD;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.h3-3{
+  color: #03568D;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.h3-3{
+  color: #4B086B;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.education-row-1{
+  background-color: white;
+}
+
+.education-row-1-text{
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.education-row-1-img{
+  float: bottom;
+  float: right;
+  width: 80%;
+}
+
+.education-row-2{
+  background-color: #03BEFA;
+}
+
+.education-row-2-text{
+  text-align: right;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.education-row-2-img{
+  float: bottom;
+  float: left;
+  width: 80%;
+}
+
+.education-row-3{
+  background-color: #BA9BC9;
+}
+
+.education-row-3-text{
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.education-row-3-img{
+  float: bottom;
+  float: right;
+  width: 80%;
+}
+
+.education-row-4{
+  background-color: #293032;
+  text-align: center;
+  color: white;
+}
+
+h4{
+  font-size: 70px;
+  font-weight: bold;
+}
+
+
+@media (max-width: 900px) {
+  h4{
+     font-size: 30px;
+     font-weight: bold;
+   }
+
+   }
+
 /* --- ACSESSIBILITY --- */
 
 .dyslexia {

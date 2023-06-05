@@ -68,6 +68,13 @@ dyslexia.addEventListener("click", () => {
 });
 
 /*--*/
+
+dyslexia.addEventListener("click", () => {
+  var element = document.getElementById("education-container");
+  element.classList.toggle("education-container");
+});
+
+/*--*/
 const fontSize = document.querySelector(".font-size-btn");
 
 fontSize.addEventListener("click", () => {
