@@ -85,3 +85,5 @@ fontSize.addEventListener("click", () => {
 
 var image = document.getElementsByClassName("hero-banner");
 new simpleParallax(image);
+
+/*-- CONTACT FORM VALIDATION --*/
