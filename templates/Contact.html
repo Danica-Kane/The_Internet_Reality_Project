@@ -85,6 +85,27 @@
       </div>
     </div>
   </div>
+
+  <!--- WORKING CONTACT FORM - FOLLOWING TUTORIAL -->
+
+  <form action="/templates/form.html" method="POST" style="margin:50px">
+    <div class="mb-3">
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name" name="first_name">
+    </div>
+
+    <div class="mb-3">
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last Name" name="last_name">
+    </div>
+
+    <div class="mb-3">
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Adress" name="email_adress">
+    </div>
+    
+    <br>
+
+    <button type="submit" class="btn btn-secondary">Submit</button>
+  </form>
+
 {% endblock %}
 
 {% block footer %}

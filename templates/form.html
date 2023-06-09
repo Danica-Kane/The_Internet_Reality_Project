@@ -1,0 +1,24 @@
+{% extends "layout.html" %} 
+{% block title %}{% endblock %} 
+{%block page%}
+{{ super() }} 
+{% endblock %} 
+{% block hero %}
+{% endblock %}
+
+{% block content %}
+<br><br><br><br>
+
+    <div class="container" style="margin:50px">
+        <p>Thank you for subscribing</p>
+        <br>
+
+        
+        {{first_name}} {{last_name}} | {{email_adress}}
+
+    </div>
+
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
