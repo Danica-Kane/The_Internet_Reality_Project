@@ -1,6 +1,23 @@
 from flask import Flask, render_template, request, url_for
-import smtplib
+from flask_mail import Mail, Message
+import os
+import ssl
+ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
+
+#-------------
+
 app = Flask(__name__, static_url_path='/static')
+app.config['MAIL_SERVER'] = 'smtp.office365.com'
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USERNAME'] = 'internetrealityproject@outlook.com'
+app.config['MAIL_PASSWORD'] = 'odrloeaxydgowyoj'
+app.config['MAIL_USE_TLS'] = False
+app.config['MAIL_USE_SSL'] = True
+mail = Mail(app)
+
+#--------
+
+subscribers = []
 
 #add pages here
 @app.route('/', methods=['GET', 'POST'])
@@ -26,7 +43,14 @@ def form():
     last_name = request.form.get("last_name")
     email_adress = request.form.get("email_adress")
 
-    return render_template('form.html', first_name=first_name, last_name=last_name, email_adress=email_adress)
+    subscribers.append(f"{first_name} {last_name} | {email_adress}")
+
+    msg = Message("hey", sender='internetrealityproject@outlook.com', 
+                    recipients=['internetrealityproject@outlook.com'])
+    msg.body = "hey there just testing this email"
+    mail.send(msg)
+
+    return render_template('form.html', subscribers=subscribers)
 if __name__ == "__main__":
     app.run(debug=True)
 

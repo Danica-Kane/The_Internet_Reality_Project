@@ -13,9 +13,11 @@
         <p>Thank you for subscribing</p>
         <br>
 
-        
-        {{first_name}} {{last_name}} | {{email_adress}}
-
+        <ul>
+        {% for subscriber in subscribers %}
+            <li>{{subscriber}}</li>
+        {% endfor %}
+        </ul>
     </div>
 
 {% endblock %}
