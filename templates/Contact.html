@@ -61,50 +61,30 @@
     <div class="col-4 contact-form-image">
     </div>
     <div class="col-4 contact-form-2">
-      <form class="contact1-form validate-form">
-      <br><br>
-      <h2 class="contact-form-header">YOUR EMAIL</h2>
-      <div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-        <input class="input1" type="text" name="email" placeholder="Email">
-        <span class="shadow-input1"></span>
-      </div>
-      <h2 class="contact-form-header">MESSAGE</h2>
-      <div class="wrap-input1 validate-input" data-validate = "Message is required">
-        <textarea class="input1" name="message" placeholder="Message"></textarea>
-        <span class="shadow-input1"></span>
-      </div>
-
-      <div class="container-contact1-form-btn">
-        <button class="contact1-form-btn submit-btn">
-          <span>
-            Send Email
-            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-          </span>
-        </button>
+      <!--FORM-->
+      <form action="/templates/form.html" method="POST" style="margin:50px" class="needs-validation">
+        <div class="mb-3">
+          <h2 class="contact-form-header">YOUR EMAIL</h2>
+          <input type="email" class="form-control" name="email_adress" id="validationCustom01" required>
+        </div>
+    
+        <div class="mb-3">
+          <h2 class="contact-form-header">SUBJECT LINE</h2>
+          <input type="text" class="form-control" name="subject_line" id="validationCustom02" required>
+        </div>
+    
+        <div class="mb-3">
+          <h2 class="contact-form-header">MESSAGE</h2>
+          <textarea type="text" class="form-control" name="your_message" id="validationCustom03" required></textarea>
+        </div>
+        
+        <br>
+    
+        <button type="submit" class="btn contact1-form-btn submit-btn">Submit</button>
       </form>
       </div>
     </div>
   </div>
-
-  <!--- WORKING CONTACT FORM - FOLLOWING TUTORIAL -->
-
-  <form action="/templates/form.html" method="POST" style="margin:50px" class="needs-validation">
-    <div class="mb-3">
-      <input type="text" class="form-control" placeholder="First Name" name="first_name" id="validationCustom01" required>
-    </div>
-
-    <div class="mb-3">
-      <input type="text" class="form-control" placeholder="Last Name" name="last_name" id="validationCustom02" required>
-    </div>
-
-    <div class="mb-3">
-      <input type="email" class="form-control" placeholder="Email Adress" name="email_adress" id="validationCustom03" required>
-    </div>
-    
-    <br>
-
-    <button type="submit" class="btn btn-secondary">Submit</button>
-  </form>
 
 {% endblock %}
 

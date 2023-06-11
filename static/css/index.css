@@ -343,14 +343,15 @@ h1 {
   color: #03568d;
   font-family: "Montserrat", sans-serif, bold;
   font-weight: bold;
-  margin-right: 20px;
+  margin-right: 5px;
   margin-bottom: 10px;
   margin-left: 30%;
+  text-align: right;
 }
 
 input {
   float: right;
-  margin-right: 20px;
+  margin-right: 5px;
   border-radius: 10px;
   margin-bottom: 10px;
   border: none;
@@ -360,10 +361,10 @@ input {
 
 textarea {
   float: right;
-  margin-right: 20px;
+  margin-right: 5px;
   border-radius: 10px;
   margin-bottom: 10px;
-  margin-left: 30%;
+  margin-left: 5px;
   border: none;
   width: 300px;
 }
@@ -375,7 +376,7 @@ textarea {
   border-color: none;
   margin-left: 30%;
   float: right;
-  margin-right: 20px;
+  margin-right: 5px;
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -425,14 +426,13 @@ textarea {
 .contact1-form-btn{
   border: none;
   border-style: none;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 5px;
 }
 
 .input1{
   padding: 5px;
 }
-
 /* --- EDUCATION PAGE --- */
 
 .education-container {

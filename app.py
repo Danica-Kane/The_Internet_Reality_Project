@@ -1,16 +1,17 @@
-from flask import Flask, render_template, request, url_for
+from flask import Flask, redirect, render_template, request, url_for
 from flask_mail import Mail, Message
-import os
-import ssl
-ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
 
 #-------------
 
 app = Flask(__name__, static_url_path='/static')
-app.config['MAIL_SERVER'] = 'smtp.office365.com'
-app.config['MAIL_PORT'] = 587
-app.config['MAIL_USERNAME'] = 'internetrealityproject@outlook.com'
-app.config['MAIL_PASSWORD'] = 'odrloeaxydgowyoj'
+
+mail = Mail(app) 
+
+# configuration of mail
+app.config['MAIL_SERVER']='smtp.gmail.com'
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USERNAME'] = 'internetrealiltyproject@gmail.com'
+app.config['MAIL_PASSWORD'] = 'aojljdgwqpmammup'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
@@ -39,18 +40,27 @@ def Game():
 
 @app.route('/templates/form.html', methods=['POST'])
 def form():
-    first_name = request.form.get("first_name")
-    last_name = request.form.get("last_name")
     email_adress = request.form.get("email_adress")
+    subject_line = request.form.get("subject_line")
+    your_message = request.form.get("your_message")
 
-    subscribers.append(f"{first_name} {last_name} | {email_adress}")
+    subscribers.append(f"{email_adress} | {subject_line} | {your_message}")
 
-    msg = Message("hey", sender='internetrealityproject@outlook.com', 
-                    recipients=['internetrealityproject@outlook.com'])
-    msg.body = "hey there just testing this email"
-    mail.send(msg)
+    if request.method == "POST":
+        msg = Message(
+                subject_line,
+                sender = 'internetrealiltyproject@gmail.com',
+                recipients = ['internetrealiltyproject@gmail.com']
+               )
+        msg.body = email_adress + ' says : ' + your_message
+        mail.send(msg)
 
-    return render_template('form.html', subscribers=subscribers)
+    # PRACTICE FORM LIST ----
+    # return render_template('form.html', subscribers=subscribers)
+    # -----------------------
+    
+    return redirect("/templates/Contact.html", code=302)
+
 if __name__ == "__main__":
     app.run(debug=True)
 
