@@ -12,6 +12,24 @@
 <img class="hero-banner" src="/static/images/hero-banners/game-banner.png" alt="hero-banner">
 {% endblock %}
 {% block content %}
+<div class="main">
+  <div class="wrapper" id="pages">
+    <span class="game-span" id="quizNumber">1</span><span class="game-span">/7</span>
+  </div>
+
+  <div class="quiz-questions" id="display-area">
+    <p class="game-p" id="question"></p>
+    <ul class="game-ul" id="answer">
+
+    </ul>
+
+    <div id="quiz-results">
+      <button type="button" name="button" class="game-submit" class="game-submit">Submit</button>
+    </div>
+  </div>
+</div>
+
+<canvas id="canvas"></canvas>
 
 {% endblock %}
 
