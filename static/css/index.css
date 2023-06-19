@@ -559,7 +559,7 @@ h4 {
 .quiz_box,
 .result_box{
     position: absolute;
-    top: 100%;
+    top: 110%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
@@ -571,7 +571,7 @@ h4 {
 .info_box,
 .quiz_box,
 .result_box{
-    top: 75%;
+    top: 90%;
 }
 }
 
@@ -929,6 +929,17 @@ footer button.show{
 .buttons button.quit:hover{
     color: #fff;
     background: #007bff;
+}
+
+.game-imgs{
+  width: 30%;
+  height: 30%;
+}
+
+.game-links{
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
 }
 
 /* --- ACSESSIBILITY --- */

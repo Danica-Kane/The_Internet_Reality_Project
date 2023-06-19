@@ -114,11 +114,11 @@ continue_btn.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); 
     showQuetions(0);
     queCounter(1); 
-    startTimer(15); 
+    startTimer(120); 
     startTimerLine(0); 
 }
 
-let timeValue =  15;
+let timeValue =  120;
 let que_count = 0;
 let que_numb = 1;
 let userScore = 0;
@@ -133,7 +133,7 @@ const quit_quiz = result_box.querySelector(".buttons .quit");
 restart_quiz.onclick = ()=>{
     quiz_box.classList.add("activeQuiz");
     result_box.classList.remove("activeResult"); 
-    timeValue = 15; 
+    timeValue = 120; 
     que_count = 0;
     que_numb = 1;
     userScore = 0;
@@ -176,16 +176,28 @@ next_btn.onclick = ()=>{
     }
 }
 
+var gameImg;
+
 // getting questions and options from array
 function showQuetions(index){
+    if( questions[index].numb == 1){
+        var gameImg = '<br> <img src="/static/images/news-articals/fake-news-1.png" class="game-imgs"> <br> <br> <p class="game-links">Full artical not avaliable</p>'        
+    } else if (questions[index].numb == 2){
+        var gameImg = '<br> <img src="/static/images/news-articals/fake-news-2.png" class="game-imgs"> <br> <br> <a class="game-links" href="https://www.rnz.co.nz/news/business/492231/emissions-trading-scheme-plans-for-revamp-to-be-released" target="_blank">Read the full artical here</a>'
+    } else if (questions[index].numb == 3){
+        var gameImg = '<br> <img src="/static/images/news-articals/fake-news-3.png" class="game-imgs"> <br> <br> <a class="game-links" href="https://www.thedailyexaminer.co.nz/te-whatu-ora-are-hiding-the-alarming-figures-a-tsunami-of-illness/" target="_blank">Read the full artical here</a>'
+    } else if (questions[index].numb == 4){
+        var gameImg = '<br> <img src="/static/images/news-articals/fake-news-4.png" class="game-imgs"> <br> <br> <a class="game-links" href="https://thebfd.co.nz/2023/06/19/the-lawyers-are-coming-for-you-groomers/" target="_blank">Read the full artical here</a>'
+    } else if (questions[index].numb == 5){
+        var gameImg = '<br> <img src="/static/images/news-articals/fake-news-5.png" class="game-imgs"> <br> <br> <a class="game-links" href="https://www.nzherald.co.nz/nz/man-admits-scissor-attack-on-passenger-during-cook-strait-crossing-on-interislander/EEFTWIIZGZAORAZBHCSRXWJVGU/" target="_blank">Read the full artical here</a>'
+    }
+
     const que_text = document.querySelector(".que_text");
 
     //creating a new span and div tag for question and option and passing the value using array index
-    let que_tag = '<span>'+ questions[index].numb + ". " + questions[index].question +'</span>';
+    let que_tag = '<span>'+ questions[index].numb + ". " + questions[index].question + gameImg + '</span>';
     let option_tag = '<div class="option"><span>'+ questions[index].options[0] +'</span></div>'
     + '<div class="option"><span>'+ questions[index].options[1] +'</span></div>'
-    + '<div class="option"><span>'+ questions[index].options[2] +'</span></div>'
-    + '<div class="option"><span>'+ questions[index].options[3] +'</span></div>';
     que_text.innerHTML = que_tag; //adding new span tag inside que_tag
     option_list.innerHTML = option_tag; //adding new div tag inside option_tag
     
