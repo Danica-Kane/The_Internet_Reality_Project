@@ -179,21 +179,10 @@ var audioElem = document.getElementById('audio');
 var audioElem2 = document.getElementById('audio2');
 document.getElementById("audio_icon").innerHTML = "<i class='bi bi-volume-up-fill audio-icon'></i>";
 
-function toggleSound() {
-    if (audioElem.paused) {
-        document.getElementById("audio_icon").innerHTML = "<i class='bi bi-volume-up-fill audio-icon'></i>";
-        audioElem.play();
-    } else {
-        document.getElementById("audio_icon").innerHTML = "<i class='bi bi-volume-mute-fill audio-icon'></i>";
-        audioElem.pause();
-    }
-}
-
 // getting questions and options from array
 function showQuetions(index) {
-    audioElem.play();
-
     if (questions[index].numb == 1) {
+        audioElem.play();
         var gameImg = '<br> <img src="/static/images/news-articals/fake-news-1.png" class="game-imgs"> <br> <br> <p class="game-links">Full artical not avaliable</p>'
     } else if (questions[index].numb == 2) {
         var gameImg = '<br> <img src="/static/images/news-articals/fake-news-2.png" class="game-imgs"> <br> <br> <a class="game-links" href="https://www.rnz.co.nz/news/business/492231/emissions-trading-scheme-plans-for-revamp-to-be-released" target="_blank">Read the full artical here</a>'
@@ -329,4 +318,19 @@ function queCounter(index) {
 
     let totalQueCounTag = '<span><p>' + index + '</p> of <p>' + questions.length + '</p> Questions</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;
+}
+
+function toggleSound() {
+    if (audioElem.paused) {
+        document.getElementById("audio_icon").innerHTML = "<i class='bi bi-volume-up-fill audio-icon'></i>";
+        audioElem.play();
+
+        audioElem.addEventListener('ended', function() {
+            this.currentTime = 0;
+            this.play();
+        }, false);
+    } else {
+        document.getElementById("audio_icon").innerHTML = "<i class='bi bi-volume-mute-fill audio-icon'></i>";
+        audioElem.pause();
+    }
 }
