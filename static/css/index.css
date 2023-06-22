@@ -539,13 +539,13 @@ h4 {
 
 /* --- GAME --- */
 .break{
-  margin-bottom: 700px;
+  margin-bottom: 1100px;
 }
 
 
 @media (max-width: 900px) {
   .break{
-    margin-bottom: 600px;
+    margin-bottom: 700px;
   }
 }
 
@@ -559,19 +559,39 @@ h4 {
 .quiz_box,
 .result_box{
     position: absolute;
-    top: 110%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media (max-width: 900px) {
-  .start_btn,
+.start_btn,
 .info_box,
-.quiz_box,
 .result_box{
-    top: 90%;
+    top: 100%;
+}
+
+
+.quiz_box{
+    top: 120%;
+}
+
+@media (max-width: 900px) {
+.info_box,
+.result_box{
+    top: 70%;
+}
+}
+
+@media (max-width: 900px) {
+  .quiz_box{
+      top: 80%;
+  }
+  }
+
+@media (max-width: 900px) {
+  .start_btn{
+    top: 60%;
 }
 }
 
@@ -932,13 +952,13 @@ footer button.show{
 }
 
 .game-imgs{
-  width: 30%;
-  height: 30%;
+  width: 50%;
+  height: 50%;
 }
 
 .game-links{
   font-size: 20px;
-  color: #000000;
+  color: #3d70e8;
   text-decoration: none;
 }
 
