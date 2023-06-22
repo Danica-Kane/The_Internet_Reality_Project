@@ -176,13 +176,15 @@ next_btn.onclick = () => {
 
 var gameImg;
 var audioElem = document.getElementById('audio');
-var audio_icon = document.getElementById("audio_icon");
-
+var audioElem2 = document.getElementById('audio2');
+document.getElementById("audio_icon").innerHTML = "<i class='bi bi-volume-up-fill audio-icon'></i>";
 
 function toggleSound() {
     if (audioElem.paused) {
+        document.getElementById("audio_icon").innerHTML = "<i class='bi bi-volume-up-fill audio-icon'></i>";
         audioElem.play();
     } else {
+        document.getElementById("audio_icon").innerHTML = "<i class='bi bi-volume-mute-fill audio-icon'></i>";
         audioElem.pause();
     }
 }
@@ -237,6 +239,12 @@ function optionSelected(answer) {
         answer.insertAdjacentHTML("beforeend", tickIconTag);
         console.log("Correct Answer");
         console.log("Your correct answers = " + userScore);
+
+        if(audioElem.paused){
+            audioElem2.paused();
+        } else {
+            audioElem2.play();
+        }
     } else {
         answer.classList.add("incorrect");
         answer.insertAdjacentHTML("beforeend", crossIconTag);

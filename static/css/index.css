@@ -115,6 +115,7 @@ li {
   text-align: center !important;
   transform: translate(-50%, 0) !important;
 }
+
 /* -------------- */
 
 /* FOOTER */
@@ -712,7 +713,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 145px;
+    width: 155px;
     margin-left: 5px;
 }
 
@@ -960,6 +961,21 @@ footer button.show{
   font-size: 20px;
   color: #3d70e8;
   text-decoration: none;
+}
+
+.audio-icon{
+  color: white;
+  size: 30px;
+}
+
+.audio-btn{
+  background-color: #007bff;
+  border-width: none;
+  border-style: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 3px;
+  justify-content: end;
 }
 
 /* --- ACSESSIBILITY --- */
