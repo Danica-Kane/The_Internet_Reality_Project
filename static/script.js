@@ -142,7 +142,6 @@ restart_quiz.onclick = () => {
     clearInterval(counterLine);
     startTimer(timeValue);
     startTimerLine(widthValue);
-    timeText.textContent = "Time Left";
     next_btn.classList.remove("show");
 }
 
@@ -165,7 +164,6 @@ next_btn.onclick = () => {
         clearInterval(counterLine); //clear counterLine
         startTimer(timeValue); //calling startTimer function
         startTimerLine(widthValue); //calling startTimerLine function
-        timeText.textContent = "Time Left"; //change the timeText to Time Left
         next_btn.classList.remove("show"); //hide the next button
     } else {
         clearInterval(counter); //clear counter
@@ -175,14 +173,11 @@ next_btn.onclick = () => {
 }
 
 var gameImg;
-var audioElem = document.getElementById('audio');
 var audioElem2 = document.getElementById('audio2');
-document.getElementById("audio_icon").innerHTML = "<i class='bi bi-volume-up-fill audio-icon'></i>";
 
 // getting questions and options from array
 function showQuetions(index) {
     if (questions[index].numb == 1) {
-        audioElem.play();
         var gameImg = '<br> <img src="/static/images/news-articals/fake-news-1.png" class="game-imgs"> <br> <br> <p class="game-links">Full artical not avaliable</p>'
     } else if (questions[index].numb == 2) {
         var gameImg = '<br> <img src="/static/images/news-articals/fake-news-2.png" class="game-imgs"> <br> <br> <a class="game-links" href="https://www.rnz.co.nz/news/business/492231/emissions-trading-scheme-plans-for-revamp-to-be-released" target="_blank">Read the full artical here</a>'
@@ -228,12 +223,7 @@ function optionSelected(answer) {
         answer.insertAdjacentHTML("beforeend", tickIconTag);
         console.log("Correct Answer");
         console.log("Your correct answers = " + userScore);
-
-        if(audioElem.paused){
-            audioElem2.paused();
-        } else {
-            audioElem2.play();
-        }
+        audioElem2.play();
     } else {
         answer.classList.add("incorrect");
         answer.insertAdjacentHTML("beforeend", crossIconTag);
@@ -318,19 +308,4 @@ function queCounter(index) {
 
     let totalQueCounTag = '<span><p>' + index + '</p> of <p>' + questions.length + '</p> Questions</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;
-}
-
-function toggleSound() {
-    if (audioElem.paused) {
-        document.getElementById("audio_icon").innerHTML = "<i class='bi bi-volume-up-fill audio-icon'></i>";
-        audioElem.play();
-
-        audioElem.addEventListener('ended', function() {
-            this.currentTime = 0;
-            this.play();
-        }, false);
-    } else {
-        document.getElementById("audio_icon").innerHTML = "<i class='bi bi-volume-mute-fill audio-icon'></i>";
-        audioElem.pause();
-    }
 }

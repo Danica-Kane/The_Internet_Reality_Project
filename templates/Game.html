@@ -48,37 +48,15 @@
 <div class="quiz_box">
   <header>
     <div class="title">The Internet Reality Project</div>
-    <audio id="audio">
-      <source
-        src="/static/Purple Planet Music - Thinking Ahead (1_16) 120bpm.mp3"
-        type="audio/mpeg"
-      />
-    </audio>
     <audio id="audio2">
-      <source
-        src="/static/Correct-answer.mp3"
-        type="audio/mpeg"
-      />
+      <source src="/static/Correct-answer.mp3" type="audio/mpeg" />
     </audio>
-    <div class="row end-row">
-      <div class="timer col">
-        <div class="time_left_txt">
-          <i class="bi bi-stopwatch" ></i>
-        </div>
-        <div class="timer_sec">60</div>
+    <div class="timer">
+      <div class="time_left_txt">
+        <i class='bi bi-stopwatch'></i>
       </div>
-      <div class="col">
-      <button
-        id="player"
-        type="button"
-        class="audio-btn"
-        onclick="javascript:toggleSound();"
-        class="button_icon"
-      >
-        <div id="audio_icon"></div>
-      </button>
-      </div>
-    </div class="row">
+      <div class="timer_sec">60</div>
+    </div>
   </header>
   <section>
     <div class="que_text">
@@ -116,5 +94,4 @@
 
 <div class="break"></div>
 
-{% endblock %} {% block footer %} audio sourced from purple planet music {%
-endblock %}
+{% endblock %} {% block footer %} {% endblock %}
