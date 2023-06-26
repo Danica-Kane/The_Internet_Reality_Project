@@ -15,7 +15,6 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 );
 
 /* ACSESSIBILITY */
-
 var acsessibility = document.getElementById("acsessibility-btn");
 
 acsessibility.onclick = function () {
@@ -24,11 +23,12 @@ acsessibility.onclick = function () {
 
 const dyslexia = document.querySelector(".dyslexia-btn");
 
+
 dyslexia.addEventListener("click", () => {
     document.body.classList.toggle("dyslexia");
 });
 
-/* remove classes */
+/* toggle classes */
 
 dyslexia.addEventListener("click", () => {
     var element = document.getElementById("home-text-one");
@@ -85,13 +85,6 @@ fontSize.addEventListener("click", () => {
 
 var image = document.getElementsByClassName("hero-banner");
 new simpleParallax(image);
-
-/* FORM SUBMISSION ALERT */
-
-var submit_alert = document.getElementById("contact_submit");
-submit_alert.onclick = function () {
-    alert("Sucsess! Your Message is being sent. The page will reload after you close this message.")
-};
 
 /* -- GAME -- */
 const start_btn = document.querySelector(".start_btn button");
