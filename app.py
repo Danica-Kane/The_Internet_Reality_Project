@@ -50,10 +50,12 @@ def form():
         msg = Message(
                 subject_line,
                 sender = 'internetrealiltyproject@gmail.com',
-                recipients = ['internetrealiltyproject@gmail.com']
+                recipients = ['internetrealiltyproject@gmail.com', email_adress]
                )
-        msg.body = email_adress + ' says : ' + your_message
+        msg.body = 'This is a copy of your email to internetrealiltyproject@gmail.com \n \n' + email_adress + ' says : ' + your_message
         mail.send(msg)
+
+        
 
     # PRACTICE FORM LIST ----
     # return render_template('form.html', subscribers=subscribers)

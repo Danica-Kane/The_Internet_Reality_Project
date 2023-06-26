@@ -339,6 +339,32 @@ li {
   background-color: #293032;
 }
 
+.contact-form-header-left-alt {
+  color: #e0dddd;
+  font-family: "Montserrat", sans-serif, bold;
+  font-weight: bold;
+  float: center;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+  .contact-form-1{
+    display: none!important;
+  }
+  .contact-form-1-alt{
+    background-color: #293032;
+  }
+  .contact-div{
+    background-color: #293032 ;
+  }
+  .contact-form-2{
+    justify-content: end;
+  }
+}
+
 .contact-form-2 {
   background-color: #02a0e0;
 }

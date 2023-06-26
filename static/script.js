@@ -86,6 +86,12 @@ fontSize.addEventListener("click", () => {
 var image = document.getElementsByClassName("hero-banner");
 new simpleParallax(image);
 
+/* FORM SUBMISSION ALERT */
+
+var submit_alert = document.getElementById("contact_submit");
+submit_alert.onclick = function () {
+    alert("Sucsess! Your Message is being sent. The page will reload after you close this message.")
+};
 
 /* -- GAME -- */
 const start_btn = document.querySelector(".start_btn button");

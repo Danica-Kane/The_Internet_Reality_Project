@@ -22,27 +22,27 @@
       <p id="contact-text-one" class="colum-contact-1-text colum-contact-1-text-font">
         <a href="#" class="contact-page-list">
           <i class="bi bi-envelope-at-fill contact-icons"></i>
-          Email
+          internetrealiltyproject@gmail.com
         </a>
         <br />
         <a href="#" class="contact-page-list">
           <i class="bi bi-telephone-fill contact-icons"></i>
-          Phone
+          phone number place holder
         </a>
         <br />
         <a href="#" class="contact-page-list">
           <i class="bi bi-instagram contact-icons"></i>
-          Instagram
+          TheInternetRealityProject_Offical
         </a>
         <br />
         <a href="#" class="contact-page-list">
           <i class="bi bi-facebook contact-icons"></i>
-          Facebook
+          TheInternetRealityProject_Offical
         </a>
         <br />
         <a href="#" class="contact-page-list">
           <i class="bi bi-twitter contact-icons"></i>
-          Twitter
+          TheInternetRealityProject_Offical
         </a>
       </p>
     </div>
@@ -53,14 +53,19 @@
 <br> <br> <br>
 
 <!-- contact form -->
+<div class="contact-div">
+  <div class="contact-form-1-alt d-md-none">
+      <p class="contact-form-header-left-alt">EMAIL US DIRECTLY</p>
+  </div>
   <div class="row">
-    <div class="col-4 contact-form-1">
+    <div class="col contact-form-1">
       <p class="contact-form-header-left">EMAIL US DIRECTLY</p>
       <img class="contact-arrow-img" src="/static/images/contact-arrow.png" alt="arrow">
     </div>
-    <div class="col-4 contact-form-image">
+    <div class="col contact-form-image">
     </div>
-    <div class="col-4 contact-form-2">
+    <div class="col contact-form-2">
+
       <!--FORM-->
       <form action="/templates/form.html" method="POST" style="margin:50px" class="needs-validation">
         <div class="mb-3">
@@ -80,11 +85,12 @@
         
         <br>
     
-        <button type="submit" class="btn contact1-form-btn submit-btn">Submit</button>
+        <button id="contact_submit" type="submit" class="btn contact1-form-btn submit-btn">Submit</button>
       </form>
       </div>
     </div>
   </div>
+</div>
 
 {% endblock %}
 
