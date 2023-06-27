@@ -27,6 +27,7 @@ document.body.style.fontFamily = "Montserrat, sans-serif"
 
 dyslexia.addEventListener("click", () => {
     document.body.style.fontFamily = "OpenDyslexic3Regular"
+    localStorage.setItem("store1", "on")
 });
 
 /*--*/
