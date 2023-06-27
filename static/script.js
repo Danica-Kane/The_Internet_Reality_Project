@@ -23,60 +23,10 @@ acsessibility.onclick = function () {
 };
 
 const dyslexia = document.querySelector(".dyslexia-btn");
-
-
-dyslexia.addEventListener("click", () => {
-    document.body.classList.toggle("dyslexia");
-
-    var element = document.getElementById("dyslexia_acsessibility");
-    element.classList.toggle("enabled");
-});
-
-
-/* toggle classes */
+document.body.style.fontFamily = "Montserrat, sans-serif"
 
 dyslexia.addEventListener("click", () => {
-    var element = document.getElementById("home-text-one");
-    element.classList.toggle("colum-home-1-text-font");
-});
-
-dyslexia.addEventListener("click", () => {
-    var element = document.getElementById("home-text-two");
-    element.classList.toggle("colum-home-2-text-font");
-});
-
-dyslexia.addEventListener("click", () => {
-    var element = document.getElementById("h1");
-    element.classList.toggle("home-header-one-font");
-});
-
-dyslexia.addEventListener("click", () => {
-    var element = document.getElementById("h1-2");
-    element.classList.toggle("home-header-two-font");
-});
-
-/* --- */
-
-dyslexia.addEventListener("click", () => {
-    var element = document.getElementById("contact-text-one");
-    element.classList.toggle("colum-contact-1-text-font");
-});
-
-dyslexia.addEventListener("click", () => {
-    var element = document.getElementById("contact-text-two");
-    element.classList.toggle("colum-contact-2-text-font");
-});
-
-dyslexia.addEventListener("click", () => {
-    var element = document.getElementById("h1-3");
-    element.classList.toggle("contact-header-one-font");
-});
-
-/*--*/
-
-dyslexia.addEventListener("click", () => {
-    var element = document.getElementById("education-container");
-    element.classList.toggle("education-container");
+    document.body.style.fontFamily = "OpenDyslexic3Regular"
 });
 
 /*--*/
