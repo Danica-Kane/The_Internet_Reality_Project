@@ -116,6 +116,11 @@ li {
   transform: translate(-50%, 0) !important;
 }
 
+.enabled{
+  color: #0ba75b !important;
+  font-weight: bold !important;
+} 
+
 /* -------------- */
 
 /* FOOTER */

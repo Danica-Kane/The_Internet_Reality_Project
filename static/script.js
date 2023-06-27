@@ -15,6 +15,7 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 );
 
 /* ACSESSIBILITY */
+
 var acsessibility = document.getElementById("acsessibility-btn");
 
 acsessibility.onclick = function () {
@@ -26,7 +27,11 @@ const dyslexia = document.querySelector(".dyslexia-btn");
 
 dyslexia.addEventListener("click", () => {
     document.body.classList.toggle("dyslexia");
+
+    var element = document.getElementById("dyslexia_acsessibility");
+    element.classList.toggle("enabled");
 });
+
 
 /* toggle classes */
 
@@ -79,6 +84,9 @@ const fontSize = document.querySelector(".font-size-btn");
 
 fontSize.addEventListener("click", () => {
     document.body.classList.toggle("font-size");
+
+    var element = document.getElementById("size_acsessibility");
+    element.classList.toggle("enabled");
 });
 
 /* --- PARRALAX SCROLL --- */
