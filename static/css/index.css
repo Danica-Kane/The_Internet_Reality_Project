@@ -1,3 +1,28 @@
+/* ----- ACSESSIBILITY ----- */
+:root,
+:root.fontRegular {
+  --font-family: 'Montserrat', sans-serif;
+}
+:root.fontDyslexia {
+  --font-family: 'OpenDyslexic3Regular';
+}
+:root.sizeRegular {
+  --font-size: 100%;
+}
+:root.sizeIncreased {
+  --font-size: 150%;
+}
+
+.form-switch {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
 /* ----- NAVIGATION BAR -----*/
 
 .Custom_Website_Logo {
@@ -445,10 +470,6 @@ textarea {
   padding: 5px;
 }
 /* --- EDUCATION PAGE --- */
-
-.education-container {
-  font-family: "Montserrat", sans-serif;
-}
 
 .h3-1 {
   color: #0269ad;
@@ -970,9 +991,4 @@ footer button.show{
   font-size: 20px;
   color: #3d70e8;
   text-decoration: none;
-}
-/* --- ACSESSIBILITY --- */
-
-.font-size {
-  font-size: 150%;
 }

@@ -16,29 +16,59 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 
 /* ACSESSIBILITY */
 
-var acsessibility = document.getElementById("acsessibility-btn");
+/* Dyslexia */
+const modeBtn1 = document.getElementById('mode1');
+modeBtn1.onchange = (e) => {
+  if (modeBtn1.checked === true) {
+    document.documentElement.classList.remove("fontRegular")
+    document.documentElement.classList.add("fontDyslexia")
+    localStorage.setItem('mode1', 'fontDyslexia');
+  } else {
+    document.documentElement.classList.remove("fontDyslexia")
+    document.documentElement.classList.add("fontRegular")
+    localStorage.setItem('mode1', 'fontRegular');
+  }
+}
 
-acsessibility.onclick = function () {
-    acsessibility.style.background = "#00BF63";
-};
+const mode1 = window.localStorage.getItem('mode1');
+if (mode1 == 'fontDyslexia') {
+  modeBtn1.checked = true;
+  document.documentElement.classList.remove("fontRegular")
+  document.documentElement.classList.add("fontDyslexia")
+}
 
-const dyslexia = document.querySelector(".dyslexia-btn");
-document.body.style.fontFamily = "Montserrat, sans-serif"
+if (mode1 == 'fontRegular') {
+  modeBtn1.checked = false;
+  document.documentElement.classList.remove("fontDyslexia")
+  document.documentElement.classList.add("fontRegular")
+}
 
-dyslexia.addEventListener("click", () => {
-    document.body.style.fontFamily = "OpenDyslexic3Regular"
-    localStorage.setItem("store1", "on")
-});
+/* font size */
+const modeBtn2 = document.getElementById('mode2');
+modeBtn2.onchange = (e) => {
+  if (modeBtn2.checked === true) {
+    document.documentElement.classList.remove("sizeRegular")
+    document.documentElement.classList.add("sizeIncreased")
+    localStorage.setItem('mode2', 'sizeIncreased');
+  } else {
+    document.documentElement.classList.remove("sizeIncreased")
+    document.documentElement.classList.add("sizeRegular")
+    localStorage.setItem('mode2', 'sizeRegular');
+  }
+}
 
-/*--*/
-const fontSize = document.querySelector(".font-size-btn");
+const mode2 = window.localStorage.getItem('mode2');
+if (mode2 == 'sizeIncreased') {
+  modeBtn2.checked = true;
+  document.documentElement.classList.remove("sizeRegular")
+  document.documentElement.classList.add("sizeIncreased")
+}
 
-fontSize.addEventListener("click", () => {
-    document.body.classList.toggle("font-size");
-
-    var element = document.getElementById("size_acsessibility");
-    element.classList.toggle("enabled");
-});
+if (mode2 == 'sizeRegular') {
+  modeBtn2.checked = false;
+  document.documentElement.classList.remove("sizeIncreased")
+  document.documentElement.classList.add("sizeRegular")
+}
 
 /* --- PARRALAX SCROLL --- */
 

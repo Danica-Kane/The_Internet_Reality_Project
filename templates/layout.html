@@ -91,11 +91,17 @@
                 />
               </button>
               <ul class="dropdown-menu dropdown-menu-center">
-                <li>
-                  <a id="dyslexia_acsessibility" class="dropdown-item dyslexia-btn" href="#"> Dyslexia </a>
+                <li class="dropdown-item">
+                  <div class="form-switch">
+                    <input type="checkbox" id="mode1" class="form-check-input">
+                    <label for="mode1" class="form-check-label">Dyslexia</label>
+                  </div>
                 </li>
-                <li>
-                  <a id="size_acsessibility" class="dropdown-item font-size-btn" href="#">Font Size</a>
+                <li class="dropdown-item">
+                  <div class="form-switch">
+                    <input type="checkbox" id="mode2" class="form-check-input">
+                    <label for="mode2" class="form-check-label">Font Size</label>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -111,8 +117,7 @@
 
     <!-- HERO BANNER -->
     <div class="hero">{% block hero %}{% endblock %}</div>
-  
-
+    
     <!-- PAGE CONTENT -->
     <div id="content">{% block content %} {% endblock %}</div>
 
