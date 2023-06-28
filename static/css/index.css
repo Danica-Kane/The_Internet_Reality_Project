@@ -8,9 +8,17 @@
 }
 :root.sizeRegular {
   --font-size: 100%;
+  --font--size-1: 2rem;
+  --font--size-2: 60px;
+  --font--size-3: 50px;
+  --font--size-4: 30px;
 }
 :root.sizeIncreased {
   --font-size: 150%;
+  --font--size-1: 4rem;
+  --font--size-2: 90px;
+  --font--size-3: 75;
+  --font--size-4: 45px;
 }
 
 .form-switch {
@@ -46,7 +54,6 @@ li {
 
 .pages {
   margin-top: 15px;
-  font-family: "Montserrat", sans-serif;
 }
 
 .navbar {
@@ -56,8 +63,9 @@ li {
   align-items: center;
 }
 .nav-branding {
-  font-size: 2rem;
+  font-size: var(--font--size-1);
 }
+
 .nav-menu {
   display: flex;
   align-items: right;
@@ -103,7 +111,7 @@ li {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 55px;
+    top: 70px;
     gap: 0;
     flex-direction: column;
     background-color: #262626;
@@ -149,7 +157,6 @@ li {
 .footer {
   background-color: #545454;
   font-size: 10px;
-  font-family: "Montserrat", sans-serif;
   margin: 0px;
   width: 100%;
   color: #fff;
@@ -231,7 +238,7 @@ li {
   color: #0269ad;
   text-align: left;
   font-weight: bold;
-  font-size: 60px;
+  font-size: var(--font--size-2);
 }
 
 .h1-one {
@@ -350,7 +357,7 @@ li {
   font-weight: bold;
   float: center;
   text-align: center;
-  font-size: 50px;
+  font-size: var(--font--size-3);
   margin-bottom: 5px;
   margin-top: 10px;
 }
@@ -474,19 +481,19 @@ textarea {
 .h3-1 {
   color: #0269ad;
   font-weight: bold;
-  font-size: 30px;
+  font-size: var(--font--size-4);
 }
 
 .h3-2 {
   color: #03568d;
   font-weight: bold;
-  font-size: 30px;
+  font-size: var(--font--size-4);
 }
 
 .h3-3 {
   color: #4b086b;
   font-weight: bold;
-  font-size: 30px;
+  font-size: var(--font--size-4);
 }
 
 .education-row-1 {
