@@ -566,6 +566,38 @@ h4 {
   }
 }
 
+.buttonNext{
+  margin: 0;
+  position: absolute;
+  top: 92%;
+  left: 55%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: none;
+}
+
+.buttonPrev{
+  margin: 0;
+  position: absolute;
+  top: 92%;
+  left: 45%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: none;
+}
+
+.buttonNext:hover,
+.buttonPrev:hover{
+  color: #23903c;
+}
+
+.bi-arrow-left-square-fill,
+.bi-arrow-right-square-fill{
+  font-size: 25px;
+}
+
 .bibliography {
   font-family: "Montserrat", sans-serif, bold;
   font-size: 10px;
