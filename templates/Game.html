@@ -11,7 +11,7 @@
   class="hero-banner"
   src="/static/images/hero-banners/game-banner.png"
   alt="hero banner"
-/>
+>
 {% endblock %} {% block content %}
 
 <!-- start Quiz button -->
@@ -49,24 +49,26 @@
   <header>
     <div class="title">The Internet Reality Project</div>
     <audio id="audio2">
-      <source src="/static/Correct-answer.mp3" type="audio/mpeg" />
+      <source src="/static/Correct-answer.mp3" type="audio/mpeg">
     </audio>
     <div class="timer">
       <div class="time_left_txt">
         <i class='bi bi-stopwatch'></i>
       </div>
-      <div class="timer_sec">60</div>
+      <div class="timer_sec">120</div>
     </div>
   </header>
-  <section>
+  <div class="quiz-content">
     <div class="que_text">
       <!--question from JavaScript -->
+      <br><br>
       <div class="game_img"></div>
+      <br><br>
     </div>
     <div class="option_list">
       <!--options from JavaScript -->
     </div>
-  </section>
+  </div>
 
   <!-- footer of Quiz Box -->
   <footer>

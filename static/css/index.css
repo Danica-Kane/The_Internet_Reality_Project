@@ -814,22 +814,22 @@ h4 {
     background: transparent;
 }
 
-section{
+.quiz-content{
     padding: 25px 30px 20px 30px;
     background: #fff;
 }
 
-section .que_text{
+.quiz-content .que_text{
     font-size: 25px;
     font-weight: 600;
 }
 
-section .option_list{
+.quiz-content .option_list{
     padding: 20px 0px;
-    display: block;   
+    display: block;
 }
 
-section .option_list .option{
+.option_list .option{
     background: aliceblue;
     border: 1px solid #84c5fe;
     border-radius: 5px;
@@ -843,33 +843,33 @@ section .option_list .option{
     justify-content: space-between;
 }
 
-section .option_list .option:last-child{
+ .option_list .option:last-child{
     margin-bottom: 0px;
 }
 
-section .option_list .option:hover{
+ .option_list .option:hover{
     color: #004085;
     background: #cce5ff;
     border: 1px solid #b8daff;
 }
 
-section .option_list .option.correct{
+ .option_list .option.correct{
     color: #155724;
     background: #d4edda;
     border: 1px solid #c3e6cb;
 }
 
-section .option_list .option.incorrect{
+ .option_list .option.incorrect{
     color: #721c24;
     background: #f8d7da;
     border: 1px solid #f5c6cb;
 }
 
-section .option_list .option.disabled{
+ .option_list .option.disabled{
     pointer-events: none;
 }
 
-section .option_list .option .icon{
+ .option_list .option .icon{
     height: 26px;
     width: 26px;
     border: 2px solid transparent;
