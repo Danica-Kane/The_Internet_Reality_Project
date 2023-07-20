@@ -10,10 +10,5 @@
             "src": "/(.*)",
             "dest": "api/app.py"
         }
-    ],
-    "files": {
-        "include": [
-          "api/templates.html"
-        ]
-      }
+    ]
 }
