@@ -22,11 +22,11 @@ mail = Mail(app)
 subscribers = []
 
 #add pages here
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/api/templates/index.html', methods=['GET', 'POST'])
 def index():
     return render_template('index.html')
 
-@app.route('/templates/Contact.html' , methods=['GET', 'POST'])
+@app.route('/api/templates/Contact.html' , methods=['GET', 'POST'])
 def Contact():
     return render_template('Contact.html')
 
