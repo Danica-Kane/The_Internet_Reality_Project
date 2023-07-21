@@ -39,7 +39,7 @@ def Game():
     return render_template('Game.html')
 
 
-@app.route('/api/templates/contact.html', methods=['POST'])
+@app.route('/api/templates/form.html', methods=['POST'])
 def form():
     email_adress = request.form.get("email_adress")
     subject_line = request.form.get("subject_line")
