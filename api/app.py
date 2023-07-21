@@ -39,7 +39,7 @@ def Game():
     return render_template('Game.html')
 
 
-@app.route('/api/templates/form.html', methods=['POST'])
+@app.route('/api/templates/form.html', methods=['GET', 'POST'])
 def form():
     email_adress = request.form.get("email_adress")
     subject_line = request.form.get("subject_line")
@@ -61,10 +61,8 @@ def form():
     # PRACTICE FORM LIST ----
     # return render_template('form.html', subscribers=subscribers)
     # -----------------------
-
-    return render_template('form.html')
     
-    #return redirect("/api/templates/Contact.html", code=302)
+    return redirect("/api/templates/Contact.html", code=302)
 
 if __name__ == "__main__":
     app.run(debug=True)
