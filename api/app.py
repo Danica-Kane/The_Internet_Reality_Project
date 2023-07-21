@@ -22,7 +22,7 @@ mail = Mail(app)
 subscribers = []
 
 #add pages here
-@app.route('/api/templates/index.html', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def index():
     return render_template('index.html')
 
@@ -30,16 +30,16 @@ def index():
 def Contact():
     return render_template('Contact.html')
 
-@app.route('/templates/Education.html' , methods=['GET', 'POST'])
+@app.route('/api/templates/Education.html' , methods=['GET', 'POST'])
 def Education():
     return render_template('Education.html')
 
-@app.route('/templates/Game.html' , methods=['GET', 'POST'])
+@app.route('/api/templates/Game.html' , methods=['GET', 'POST'])
 def Game():
     return render_template('Game.html')
 
 
-@app.route('/templates/form.html', methods=['POST'])
+@app.route('/api/templates/form.html', methods=['POST'])
 def form():
     email_adress = request.form.get("email_adress")
     subject_line = request.form.get("subject_line")
