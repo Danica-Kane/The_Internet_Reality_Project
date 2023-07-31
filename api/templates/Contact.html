@@ -65,8 +65,9 @@
 
 <!-- CONTACT FORM -->
 <div class="contact-div">
+
+  <!-- ALTERNATIVE HEADER -->
   <div class="contact-form-1-alt d-md-none">
-      <!-- ALTERNATIVE HEADER -->
       <p class="contact-form-header-left-alt">EMAIL US DIRECTLY</p>
   </div>
   
@@ -78,22 +79,26 @@
     </div>
     <!-- FORM IMAGE -->
     <div class="col contact-form-image"></div>
-    <!--FORM-->
+    <!-- FORM (requires validation for submission, handels boundry cases and posts data to app.py)-->
     <div class="col contact-form-2">
       <form action="/api/templates/form.html" method="POST" style="margin:50px" class="needs-validation">
+        <!-- email input -->
         <div class="mb-3">
           <h2 class="contact-form-header">YOUR EMAIL</h2>
           <input type="email" class="form-control" name="email_adress" id="validationCustom01" required>
         </div>
+        <!-- subject line input -->
         <div class="mb-3">
           <h2 class="contact-form-header">SUBJECT LINE</h2>
           <input type="text" class="form-control" name="subject_line" id="validationCustom02" required>
         </div>
+        <!-- message input -->
         <div class="mb-3">
           <h2 class="contact-form-header">MESSAGE</h2>
           <textarea class="form-control" name="your_message" id="validationCustom03" required></textarea>
         </div>
         <br>
+        <!-- SUBMIT BUTTON -->
         <button id="contact_submit" type="submit" class="btn contact1-form-btn submit-btn">Submit</button>
       </form>
       </div>

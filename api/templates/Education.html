@@ -1,18 +1,27 @@
-{% extends "layout.html" %} {% block title %}Education{% endblock %} {%block
-page%} {{ super() }}
+<!-- NOTE : this is the education page of my website, its contents are transfered into my layout html file using block extends -->
+
+{% extends "layout.html" %}
+{% block title %}Education{% endblock %} 
+{%blockpage%} 
+{{ super() }}
+<!-- NAV BAR LINK UNDERLINE -->
 <style>
   .page-active-education {
     text-decoration: underline #02a0e0 3px;
     text-underline-offset: 10px;
   }
 </style>
-{% endblock %} {% block hero %}
+{% endblock %} 
+{% block hero %}
+<!-- HERO BANNER -->
 <img
   class="hero-banner"
   src="/static/images/hero-banners/education-banner.png"
   alt="hero banner"
 >
-{% endblock %} {% block content %}
+{% endblock %} 
+{% block content %}
+<!-- PAGE CONTENT -->
 
 <!-- Education section -->
 <div class="education-container" id="education-container">
