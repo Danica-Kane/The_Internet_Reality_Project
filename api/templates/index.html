@@ -1,7 +1,10 @@
+<!-- NOTE : this is the home page of my website, its contents are transfered into my layout html file using block extends -->
+
 {% extends "layout.html" %} 
 {% block title %}Home{% endblock %} 
 {%block page%}
 {{ super() }}
+<!-- NAV BAR LINK UNDERLINE -->
 <style>
   .page-active-index {
     text-decoration: underline #02a0e0 3px;
@@ -10,11 +13,13 @@
 </style>
 {% endblock %} 
 {% block hero %}
-  <img class="hero-banner hero-banner-index" src="/static/images/hero-banners/index-banner.png" alt="hero banner">
+<!-- HERO BANNER -->
+<img class="hero-banner hero-banner-index" src="/static/images/hero-banners/index-banner.png" alt="hero banner">
 {% endblock %}
 {% block content %}
-
+<!-- PAGE CONTENT -->
 <div class="container text-center">
+  <!-- ABOUT CONTENT -->
   <div class="row">
     <div class="col colum-home-1">
       <h1 id="h1" class="h1 header-background-1 home-header-one-font">ABOUT</h1>
@@ -30,6 +35,7 @@
       </p>
     </div>
   </div>
+  <!-- OUR MISSION CONTENT -->
   <div class="row">
     <div class="col">
       <br> <br>
@@ -55,6 +61,7 @@
       </div>
     </div>
   </div>
+
 </div>
 
 {% endblock %}
