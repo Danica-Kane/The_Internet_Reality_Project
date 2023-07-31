@@ -6,7 +6,7 @@ from flask_mail import Mail, Message
 app = Flask(__name__, static_url_path='/static')
 mail = Mail(app) 
 
-# CONFIGERATION OF MAIL
+# CONFIGERATION OF FlASK MAIL
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USERNAME'] = 'internetrealiltyproject@gmail.com'

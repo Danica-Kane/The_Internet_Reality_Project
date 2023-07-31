@@ -1,31 +1,45 @@
-{% extends "layout.html" %} {% block title %}Game{% endblock %} {%block page%}
+<!-- NOTE : this is the game page of my website, its contents are transfered into my layout html file using block extends -->
+
+{% extends "layout.html" %}
+{% block title %}Game{% endblock %} 
+{%block page%}
 {{ super() }}
+<!-- NAV BAR LINK UNDERLINE -->
 <style>
   .page-active-game {
     text-decoration: underline #02a0e0 3px;
     text-underline-offset: 10px;
   }
 </style>
-{% endblock %} {% block hero %}
+{% endblock %} 
+{% block hero %}
+<!-- HERO BANNER -->
 <img
   class="hero-banner"
   src="/static/images/hero-banners/game-banner.png"
   alt="hero banner"
 >
-{% endblock %} {% block content %}
+{% endblock %}
+{% block content %}
+<!-- PAGE CONTENT -->
 
-<!-- start Quiz button -->
+<!-- QUIZ START BUTTON (activates quiz) -->
 <div class="start_btn"><button>Start Quiz</button></div>
 
-<!-- Info Box -->
+<!-- QUIZ INFORMATION BOX (is activated when quiz activates, hides once play button selected) -->
 <div class="info_box">
   <div class="info-title"><span>Some Rules of this Quiz</span></div>
+  <!-- QUIZ RULES -->
   <div class="info-list">
     <div class="info">
       1. You will have only <span>2 minutes</span> per each question.
     </div>
-    <div class="info">2. Once you select your answer, it can't be undone.</div>
-    <div class="info">3. You can't select any option once time goes off.</div>
+    <div class="info">
+      2. Once you select your answer, it can't be undone.
+    </div>
+    <div class="info">
+      3. You can't select any option once time goes off.
+    </div>
     <div class="info">
       4. You can't exit from the Quiz while you're playing.
     </div>
@@ -38,19 +52,24 @@
       third party fact cheaker on the organisation.
     </div>
   </div>
+  <!-- CONTROL BUTTONS -->
   <div class="buttons">
     <button class="quit">Exit</button>
     <button class="restart">Continue</button>
   </div>
 </div>
 
-<!-- Quiz Box -->
+<!-- QUIZ BOX (here is where the game itself is displayed)-->
 <div class="quiz_box">
+  <!-- HEADER BAR -->
   <header>
+    <!-- TITLE -->
     <div class="title">The Internet Reality Project</div>
+    <!-- AUDIO (load audio for later use in the quiz, this is activated in script.js) -->
     <audio id="audio2">
       <source src="/static/Correct-answer.mp3" type="audio/mpeg">
     </audio>
+    <!-- TIMER (displays times counting down from 120 seconds, the counting down is handeled in script.js)-->
     <div class="timer">
       <div class="time_left_txt">
         <i class='bi bi-stopwatch'></i>
@@ -58,36 +77,46 @@
       <div class="timer_sec">120</div>
     </div>
   </header>
+
+  <!-- QUIZ CONTENT (questions and answer options)-->
   <div class="quiz-content">
+    <!-- QUESTION -->
     <div class="que_text">
-      <!--question from JavaScript -->
+      <!-- question passed in through script.js, which takes questions from game.js arrays -->
       <br><br>
+      <!-- QUESTION IMAGE (this is also passed through from script.js) -->
       <div class="game_img"></div>
       <br><br>
     </div>
+
+    <!-- ANSWER OPTIONS -->
     <div class="option_list">
-      <!--options from JavaScript -->
+      <!-- answer options passed in through script.js, which takes answer options from game.js arrays -->
     </div>
   </div>
 
-  <!-- footer of Quiz Box -->
+  <!-- FOOTER BAR -->
   <footer>
+    <!-- QUESTION ID NUMBER -->
     <div class="total_que">
-      <!--Question Count Number from JavaScript -->
+      <!-- question number id passed in through script.js, which takes id's from game.js arrays -->
     </div>
+    <!-- NEXT BUTTON -->
     <button class="next_btn">Next</button>
   </footer>
 </div>
 
-<!-- Result Box -->
+<!-- RESULT BOX -->
 <div class="result_box">
   <div class="icon">
     <i class="fas fa-crown"></i>
   </div>
   <div class="complete_text">You've completed the Quiz!</div>
+  <!-- SCORE -->
   <div class="score_text">
-    <!-- Score Result from JavaScript -->
+    <!-- score result passed in from script.js -->
   </div>
+  <!-- REPLAY AND EXIT BUTTONS-->
   <div class="buttons">
     <button class="restart">Replay Quiz</button>
     <button class="quit">Quit Quiz</button>
@@ -96,4 +125,6 @@
 
 <div class="break"></div>
 
-{% endblock %} {% block footer %} {% endblock %}
+{% endblock %} 
+{% block footer %} 
+{% endblock %}
