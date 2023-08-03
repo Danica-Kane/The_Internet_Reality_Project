@@ -130,6 +130,7 @@ function validate() {
     document.getElementById('contact_submit').disabled = true;
 }
 
+document.getElementById('contact_submit').disabled = true;
 /* ---------------------------------------------------- */ 
 
 
