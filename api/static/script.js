@@ -132,6 +132,7 @@ function validate() {
     }
     else {
         user2.style.border = "red solid 3px";
+        alert("fail");
         return false;
     }
 }
