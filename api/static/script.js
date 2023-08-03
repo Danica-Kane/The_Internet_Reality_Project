@@ -123,8 +123,8 @@ new simpleParallax(image);
 
 function validate() {
   
-    var user = document.getElementById("validationCustom02").value;
-    var user2 = document.getElementById("validationCustom02");
+    var user = document.getElementById("validationCustom01").value;
+    var user2 = document.getElementById("validationCustom01");
     var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if (re.test(user)) {
         alert("done");
