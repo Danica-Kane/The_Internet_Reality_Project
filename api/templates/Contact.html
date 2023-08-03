@@ -82,7 +82,7 @@
     <div class="col contact-form-image"></div>
     <!-- FORM (requires validation for submission, handels boundry cases and posts data to app.py)-->
     <div class="col contact-form-2">
-      <form action="/api/templates/form.html" method="POST" style="margin:50px"> <!--class="needs-validation"-->
+      <form action="/api/templates/form.html" method="POST" style="margin:50px" onsubmit="validate()"> <!--class="needs-validation"-->
         <!-- email input -->
         <div class="mb-3">
           <h2 class="contact-form-header">YOUR EMAIL</h2>
@@ -101,7 +101,7 @@
         </div>
         <br>
         <!-- SUBMIT BUTTON -->
-        <button id="contact_submit" onclick="validate()" type="submit" class="btn contact1-form-btn submit-btn">Submit</button>
+        <button id="contact_submit" type="submit" class="btn contact1-form-btn submit-btn">Submit</button>
       </form>
       </div>
   </div>
