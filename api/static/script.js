@@ -119,6 +119,26 @@ new simpleParallax(image);
 
 /* ---------------------------------------------------- */ 
 
+/* --- FORM VALIDATION USING REGEX --- */
+
+function validate() {
+  
+    var user = document.getElementById("validationCustom02").value;
+    var user2 = document.getElementById("validationCustom02");
+    var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (re.test(user)) {
+        alert("done");
+        return true;
+    }
+    else {
+        user2.style.border = "red solid 3px";
+        return false;
+    }
+}
+
+/* ---------------------------------------------------- */ 
+
+
 /* --- GAME --- */
 
 /* set game variables */
