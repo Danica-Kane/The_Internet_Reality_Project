@@ -127,17 +127,17 @@ function validate() {
     var user2 = document.getElementById("validationCustom01");
     var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     var submitbutton = document.getElementById("contact_submit");
-    if (re.test(user)) {
+    /*if (re.test(user)) {
         alert("done");
         submitbutton.disabled = false
         return true;
     }
-    else {
+    else { */
         user2.style.border = "red solid 3px";
         alert("fail");
         submitbutton.disabled = true
         return false;
-    }
+   /* }*/
 }
 
 /* ---------------------------------------------------- */ 
