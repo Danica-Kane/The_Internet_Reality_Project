@@ -123,14 +123,13 @@ new simpleParallax(image);
 
 /* test that email is valid */
 const emailInput = document.getElementById("validationCustom01");
-const email_re = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
 
-if(emailInput.value.match(email_re)){
+if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput.value)){
     document.getElementById('contact_submit').removeAttribute('disable');
     document.getElementById('contact_submit').removeAttribute('hidden')
     document.getElementById('contact_submit').classList.add('submit-btn-active')
     alert("ALERT");
-} 
+}
 
 /*else {
     document.getElementById('contact_submit').setAttribute('disable');
