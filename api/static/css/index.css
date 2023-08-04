@@ -443,7 +443,7 @@ textarea {
   width: 300px;
 }
 
-.submit-btn {
+.submit-btn-active {
   background-color: #7ed957;
   color: #255e0c;
   font-family: "Montserrat", sans-serif;
@@ -453,6 +453,10 @@ textarea {
   margin-right: 5px;
   border-radius: 10px;
   margin-bottom: 10px;
+}
+
+.submit-btn-disabled {
+  visibility: hidden;
 }
 
 /* resize input boxes when screen minimised */
@@ -498,12 +502,6 @@ textarea {
   float: right;
 }
 
-.contact1-form-btn{
-  border: none;
-  border-style: none;
-  border-radius: 5px;
-  padding: 5px;
-}
 
 .input1{
   padding: 5px;
