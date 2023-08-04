@@ -125,7 +125,7 @@ new simpleParallax(image);
 const emailInput = document.getElementById("validationCustom01");
 const email_re = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
 
-if(email_re.test(emailInput.value)){
+if(emailInput.value.match(email_re)){
     document.getElementById('contact_submit').removeAttribute('disable');
     document.getElementById('contact_submit').removeAttribute('hidden')
     document.getElementById('contact_submit').classList.add('submit-btn-active')
