@@ -456,13 +456,6 @@ textarea {
   color: black;
 }
 
-.submit-btn-disabled {
-  visibility:hidden;
-  display: none;
-  border: none;
-  color:none;
-}
-
 /* resize input boxes when screen minimised */
 @media (max-width: 900px) {
   textarea {
