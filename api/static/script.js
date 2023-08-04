@@ -121,15 +121,16 @@ new simpleParallax(image);
 
 /* --- FORM VALIDATION USING REGEX --- */
 
+const submit_btn = document.getElementById('contact_submit');
+
 /* test that email is valid */
 const emailInput = document.getElementById("validationCustom01");
 
-if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput.value)){
-    document.getElementById('contact_submit').removeAttribute('disable');
-    document.getElementById('contact_submit').removeAttribute('hidden')
-    document.getElementById('contact_submit').classList.add('submit-btn-active')
-    alert("ALERT");
-}
+submit_btn.addEventListener("click", () => {
+    if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput.value)){
+        alert("ALERT");
+    }
+});
 
 /*else {
     document.getElementById('contact_submit').setAttribute('disable');
