@@ -127,7 +127,7 @@ const submit_btn = document.getElementById('contact_submit');
 const emailInput = document.getElementById("validationCustom01");
 
 submit_btn.addEventListener("click", () => {
-    if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput.value)){
+    if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput)){
         alert("ALERT");
     }
 });
