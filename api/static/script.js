@@ -121,16 +121,11 @@ new simpleParallax(image);
 
 /* --- FORM VALIDATION USING REGEX --- */
 
-function validate() {
   
     var user = document.getElementById("validationCustom01").value;
     var user2 = document.getElementById("validationCustom01");
     var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     
-    document.getElementById('contact_submit').disabled = true;
-}
-
-document.getElementById('contact_submit').disabled = true;
 /* ---------------------------------------------------- */ 
 
 
