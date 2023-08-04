@@ -453,10 +453,13 @@ textarea {
   margin-right: 5px;
   border-radius: 10px;
   margin-bottom: 10px;
+  color: black;
 }
 
 .submit-btn-disabled {
   visibility: hidden;
+  border: none;
+  color:none;
 }
 
 /* resize input boxes when screen minimised */

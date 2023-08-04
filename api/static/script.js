@@ -122,19 +122,21 @@ new simpleParallax(image);
 /* --- FORM VALIDATION USING REGEX --- */
 
 /* test that email is valid */
-var emailInput = document.getElementById("validationCustom01").value;
-var email_re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+var emailInput = document.getElementById("validationCustom01");
+var email_re = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
 
 if(emailInput.match(email_re)){
     document.getElementById('contact_submit').removeAttribute('disable');
     document.getElementById('contact_submit').classList.remove('submit-btn-disabled')
     document.getElementById('contact_submit').classList.add('submit-btn-active')
-} else {
+} 
+
+/*else {
     document.getElementById('contact_submit').setAttribute('disable');
     document.getElementById('contact_submit').classList.remove('submit-btn-active')
     document.getElementById('contact_submit').classList.add('submit-btn-disabled')
 
-}
+}*/
     
 /* ---------------------------------------------------- */ 
 
