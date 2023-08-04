@@ -125,10 +125,11 @@ new simpleParallax(image);
 var emailInput = document.getElementById("validationCustom01");
 var email_re = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
 
-if(emailInput.match(email_re)){
+if(email_re.test(emailInput)){
     document.getElementById('contact_submit').removeAttribute('disable');
     document.getElementById('contact_submit').classList.remove('submit-btn-disabled')
     document.getElementById('contact_submit').classList.add('submit-btn-active')
+    alert("ALERT");
 } 
 
 /*else {

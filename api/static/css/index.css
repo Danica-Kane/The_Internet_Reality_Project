@@ -457,7 +457,8 @@ textarea {
 }
 
 .submit-btn-disabled {
-  visibility: hidden;
+  visibility:hidden;
+  display: none;
   border: none;
   color:none;
 }
