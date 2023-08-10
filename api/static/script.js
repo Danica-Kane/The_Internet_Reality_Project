@@ -216,9 +216,9 @@ message.addEventListener('input', function(e){
 // VALIDATION IN FULL
 function submission(){
     if (emailValid == 'valid' && subjectValid == 'valid' && messageValid == 'valid'){
-        document.getElementById('submit-btn').removeAttribute('disabled', '')
+        document.getElementById('submit-btn').removeAttribute('disabled')
     } else {
-        document.getElementById('submit-btn').setAttribute('disabled', '')
+        document.getElementById('submit-btn').setAttribute('disabled')
     }
 }
 

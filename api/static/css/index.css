@@ -523,12 +523,18 @@ textarea {
 
 .text-warning {
   color: #fb8500;
+  margin-top: 10px;
+  float: right;
 }
 .text-danger {
   color: #d90429;
+  margin-top: 10px;
+  float: right;
 }
 .text-normal {
   color: black;
+  margin-top: 10px;
+  float: right;
 }
 
 /* ---------------------------------------------------- */ 
