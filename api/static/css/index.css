@@ -523,16 +523,15 @@ textarea {
 
 .text-warning {
   color: #fb8500;
-  margin-top: 20px;
-  text-align: right;
 }
 .text-danger {
   color: #d90429;
-  margin-top: 20px;
-  text-align: right;
 }
 .text-normal {
   color: black;
+}
+
+.counter-placement{
   margin-top: 20px;
   text-align: right;
 }
