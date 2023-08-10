@@ -38,9 +38,9 @@ def Game():
 @app.route('/api/templates/form.html', methods=['POST'])
 def form():
     # get form contents
-    email_adress = request.form.get("email_adress")
-    subject_line = request.form.get("subject_line")
-    your_message = request.form.get("your_message")
+    email_adress = request.form.get("email")
+    subject_line = request.form.get("subject")
+    your_message = request.form.get("message")
 
     subscribers.append(f"{email_adress} | {subject_line} | {your_message}")
 
