@@ -457,7 +457,7 @@ textarea {
   border: none;
 }
 
-.submit-btn:disabled{
+button:disabled{
   background-color: #a2aaa4;
   color: #919491;
   font-family: "Montserrat", sans-serif;
