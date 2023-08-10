@@ -454,6 +454,21 @@ textarea {
   border-radius: 10px;
   margin-bottom: 10px;
   color: black;
+  border: none;
+}
+
+.submit-btn:disabled{
+  background-color: #a2aaa4;
+  color: #919491;
+  font-family: "Montserrat", sans-serif;
+  border-color: none;
+  margin-left: 30%;
+  float: right;
+  margin-right: 5px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: black;
+  border: none;
 }
 
 /* resize input boxes when screen minimised */
