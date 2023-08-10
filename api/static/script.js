@@ -126,11 +126,7 @@ const submit_btn = document.getElementById('contact_submit');
 /* test that email is valid */
 const emailInput = document.getElementById("validationCustom01");
 
-submit_btn.addEventListener("click", () => {
-    if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput)){
-        alert("ALERT");
-    }
-});
+
 
 /*else {
     document.getElementById('contact_submit').setAttribute('disable');
