@@ -504,6 +504,33 @@ textarea {
   padding: 5px;
 }
 
+/* --- CONTACT FORM --- */
+
+#email-err{
+  color: red;
+  display: none;
+}
+
+#subject-err{
+  color: red;
+  display: none;
+}
+
+#message-err{
+  color: red;
+  display: none;
+}
+
+.text-warning {
+  color: #fb8500;
+}
+.text-danger {
+  color: #d90429;
+}
+.text-normal {
+  color: black;
+}
+
 /* ---------------------------------------------------- */ 
 
 /* --- EDUCATION PAGE --- */

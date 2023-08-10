@@ -121,20 +121,148 @@ new simpleParallax(image);
 
 /* --- FORM VALIDATION USING REGEX --- */
 
-const submit_btn = document.getElementById('contact_submit');
+// SET VARS 
 
-/* test that email is valid */
-const emailInput = document.getElementById("validationCustom01");
+//email
+var email = document.getElementById('email');
+var emailErrPara = document.getElementById('email-err');
+var emailValid = ''
+
+//subject
+var subject = document.getElementById('subject');
+var subjectErrPara = document.getElementById('subject-err');
+var subjectValid = ''
+
+var SubjectCharacterCounterElement = document.querySelector("#subject-character-counter");
+var SubjectTypedCharactersElement = document.querySelector("#subject-typed-characters");
+var SubjectMaximumCharacters = 50;
+
+//message
+var message = document.getElementById('message');
+var messageErrPara = document.getElementById('message-err');
+var messageValid = ''
+
+var MessageCharacterCounterElement = document.querySelector("#message-character-counter");
+var MessageTypedCharactersElement = document.querySelector("#message-typed-characters");
+var MessageMaximumCharacters = 1000;
 
 
+// VALIDATE Email 
+email.addEventListener('input', function(e){
+    console.log(e.target.value);
 
-/*else {
-    document.getElementById('contact_submit').setAttribute('disable');
-    document.getElementById('contact_submit').classList.remove('submit-btn-active')
-    document.getElementById('contact_submit').classList.add('submit-btn-disabled')
+    var pattern = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
+    var currentValue = e.target.value;
+    var valid = pattern.test(currentValue);
 
-}*/
-    
+    if(valid){
+        emailErrPara.style.display = 'none';
+        emailValid = 'valid';
+    } else {
+        emailErrPara.style.display = 'block';
+        emailValid = 'invalid';
+    }
+
+    console.log(valid);
+    console.log(emailValid);
+
+    submission();
+});
+
+// VALIDATE Subject 
+subject.addEventListener('input', function(e){
+    console.log(e.target.value);
+
+    var pattern = /^.{0,50}$/;
+    var currentValue = e.target.value;
+    var valid = pattern.test(currentValue);
+
+    if(valid){
+        subjectErrPara.style.display = 'none';
+        subjectValid = 'valid';
+    } else {
+        subjectErrPara.style.display = 'block';
+        subjectValid = 'invalid';
+    }
+
+    console.log(valid);
+    console.log(subjectValid);
+
+    submission();
+});
+
+// VALIDATE Message 
+message.addEventListener('input', function(e){
+    console.log(e.target.value);
+
+    var pattern = /^.{0,1000}$/;
+    var currentValue = e.target.value;
+    var valid = pattern.test(currentValue);
+
+    if(valid){
+        messageErrPara.style.display = 'none';
+        messageValid = 'valid';
+    } else {
+        messageErrPara.style.display = 'block';
+        messageValid = 'invalid';
+    }
+
+    console.log(valid);
+    console.log(messageValid);
+
+    submission();
+});
+
+// VALIDATION IN FULL
+function submission(){
+    if (emailValid == 'valid' && subjectValid == 'valid' && messageValid == 'valid'){
+        document.getElementById('btn-submit').removeAttribute('disabled', '')
+    } else {
+        document.getElementById('btn-submit').setAttribute('disabled', '')
+    }
+}
+
+//CHARACTER COUNTER MESSAGE
+
+message.addEventListener("keydown", (event) => {
+    var typedCharacters = message.value.length;
+
+    if (typedCharacters > MessageMaximumCharacters) {
+        return false;
+    }
+
+    MessageTypedCharactersElement.textContent = typedCharacters;
+
+    if (typedCharacters >= 900 && typedCharacters < 950) {
+        MessageCharacterCounterElement.classList = "text-warning";
+    } else if (typedCharacters >= 950) {
+        MessageCharacterCounterElement.classList = "text-danger";
+    } else {
+        MessageCharacterCounterElement.classList = "text-normal";
+    }
+});
+
+//CHARACTER COUNTER SUBJECT
+
+subject.addEventListener("keydown", (event) => {
+    var typedCharacters = subject.value.length;
+
+    if (typedCharacters > SubjectMaximumCharacters) {
+        return false;
+    }
+
+    SubjectTypedCharactersElement.textContent = typedCharacters;
+
+    if (typedCharacters >= 35 && typedCharacters < 45) {
+        SubjectCharacterCounterElement.classList = "text-warning";
+    } else if (typedCharacters >= 45) {
+        SubjectCharacterCounterElement.classList = "text-danger";
+    } else {
+        SubjectCharacterCounterElement.classList = "text-normal";
+    }
+});
+
+
 /* ---------------------------------------------------- */ 
 
 

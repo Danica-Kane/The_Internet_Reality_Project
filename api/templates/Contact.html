@@ -88,21 +88,35 @@
         <div class="mb-3">
           <h2 class="contact-form-header">YOUR EMAIL</h2>
           <!-- add in type="email"-->
-          <input type="text" class="form-control" name="email_adress" id="validationCustom01">
+          <input class="form-control" id="email" type="text" name="email" placeholder="Email" required>
+          <p id="email-err">Please enter a valid Email</p>
         </div>
         <!-- subject line input -->
         <div class="mb-3">
           <h2 class="contact-form-header">SUBJECT LINE</h2>
-          <input class="form-control" name="subject_line" id="validationCustom02">
+          <input class="form-control" id="subject" type="text" name="password" placeholder="Subject line" required>
+          <div id="subject-character-counter" class="">
+            <span id="subject-typed-characters">0</span>
+            <span>/</span>
+            <span id="subject-maximum-characters">50</span>
+        </div>
+        <p id="subject-err">You have exceeded the text limit</p>
         </div>
         <!-- message input -->
         <div class="mb-3">
           <h2 class="contact-form-header">MESSAGE</h2>
-          <textarea class="form-control" name="your_message" id="validationCustom03"></textarea>
+          <textarea class="form-control" id="message" type="text" name="message" placeholder="Write your message here" required></textarea>
+          <div id="message-character-counter" class="">
+            <span id="message-typed-characters">0</span>
+            <span>/</span>
+            <span id="message-maximum-characters">1000</span>
+        </div>
+
+        <p id="message-err">You have exceeded the text limit</p>
         </div>
         <br>
         <!-- SUBMIT BUTTON -->
-        <button id="contact_submit" class="btn submit-btn">Submit</button>
+        <button type="submit" value="login" id="contact_submit" class="btn submit-btn" disabled>Submit</button>
       </form>
       </div>
   </div>
