@@ -1,6 +1,6 @@
 <!-- NOTE : this is the contact page of my website, its contents are transfered into my layout html file using block extends -->
 
-{% extends "layout.html" %} 
+{% extends "layout.html" %}
 {% block title %}Contact{% endblock %} {%block page%}
 {{ super() }}
 <!-- NAV BAR LINK UNDERLINE -->
@@ -10,7 +10,7 @@
     text-underline-offset: 10px;
   }
 </style>
-{% endblock %} 
+{% endblock %}
 {% block hero %}
 <!-- HERO BANNER -->
 <img class="hero-banner" src="/static/images/hero-banners/contact-banner.png" alt="hero banner">
@@ -69,9 +69,9 @@
 
   <!-- ALTERNATIVE HEADER -->
   <div class="contact-form-1-alt d-md-none">
-      <p class="contact-form-header-left-alt">EMAIL US DIRECTLY</p>
+    <p class="contact-form-header-left-alt">EMAIL US DIRECTLY</p>
   </div>
-  
+
   <!-- CONTACT FORM -->
   <div class="row">
     <!-- MAIN HEADER -->
@@ -95,32 +95,33 @@
         <div class="mb-3">
           <h2 class="contact-form-header">SUBJECT LINE</h2>
           <input class="form-control" id="subject" type="text" name="password" placeholder="Subject line" required>
-          <br> <br>
+          <br> <br> <br> <br>
           <div id="subject-character-counter" class="">
             <span id="subject-typed-characters">0</span>
             <span>/</span>
             <span id="subject-maximum-characters">50</span>
-        </div>
-        <p id="subject-err">You have exceeded the text limit</p>
+          </div>
+          <p id="subject-err">You have exceeded the text limit</p>
         </div>
         <!-- message input -->
         <div class="mb-3">
           <h2 class="contact-form-header">MESSAGE</h2>
-          <textarea class="form-control" id="message" type="text" name="message" placeholder="Write your message here" required></textarea>
-          <br> <br> 
+          <textarea class="form-control" id="message" type="text" name="message" placeholder="Write your message here"
+            required></textarea>
+          <br> <br>
           <div id="message-character-counter" class="">
             <span id="message-typed-characters">0</span>
             <span>/</span>
             <span id="message-maximum-characters">1000</span>
-        </div>
+          </div>
 
-        <p id="message-err">You have exceeded the text limit</p>
+          <p id="message-err">You have exceeded the text limit</p>
         </div>
         <br>
         <!-- SUBMIT BUTTON -->
-        <button type="submit" value="login" id="contact_submit" class="btn submit-btn" disabled>Submit</button>
+        <button type="submit" value="login" id="submit-btn" class="btn submit-btn" disabled>Submit</button>
       </form>
-      </div>
+    </div>
   </div>
 </div>
 
