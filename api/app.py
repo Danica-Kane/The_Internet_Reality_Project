@@ -53,8 +53,7 @@ def form():
                )
         msg.body = 'This is a copy of your email to internetrealiltyproject@gmail.com \n \n' + email_adress + ' says : ' + your_message
         mail.send(msg)
-
-        
+     
 
     # PRACTICE FORM LIST ----
     # return render_template('form.html', subscribers=subscribers)
