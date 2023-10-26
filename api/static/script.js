@@ -269,7 +269,8 @@ subject.addEventListener("keydown", (event) => {
 /* --- GAME --- */
 
 /* set game variables */
-const start_btn = document.querySelector(".start_btn button");
+//const start_btn = document.querySelector(".start_btn button");
+const start_btn = document.getElementById("start_btn")
 const info_box = document.querySelector(".info_box");
 const exit_btn = info_box.querySelector(".buttons .quit");
 const continue_btn = info_box.querySelector(".buttons .restart");
